@@ -1,0 +1,16 @@
+# making a spring project
+spring init --dependencies=web \
+  --java-version=21 \
+  --groupId=ie.tcd.scss \
+  --artifactId=contactbook \
+  --name=contactbook \
+  --package-name=ie.tcd.scss.contactbook \
+  --build=maven \
+  contactbook
+cd contactbook
+
+# From the project root
+mvn clean package
+
+# Run the app
+mvn spring-boot:run

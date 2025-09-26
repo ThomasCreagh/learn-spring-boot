@@ -13,6 +13,9 @@
   {
     devShells.${system}.default = pkgs.mkShell {
       buildInputs = with pkgs; [
+        maven
+        jdk21_headless
+        spring-boot-cli
       ];
       env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
       ];

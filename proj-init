@@ -1,0 +1,12 @@
+if [ -z "$1" ]; then
+        echo "No name provided! Usage: proj-init <project name>"
+  exit 1
+fi
+spring init --dependencies=web \
+  --java-version=21 \
+  --groupId=ie.tcd.scss \
+  --artifactId=$1 \
+  --name=$1 \
+  --package-name=ie.tcd.scss.$1\
+  --build=maven \
+  $1
