@@ -1,10 +1,9 @@
 package ie.tcd.scss.contactbook.controllers;
-import ie.tcd.scss.contactbook.services.ContactsService;
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import java.util.Map;
-// @RestController combines @Controller and @ResponseBody, making it easy to create RESTful
-web services.
+import ie.tcd.scss.contactbook.services.ContactsService;
+// @RestController combines @Controller and @ResponseBody, making it easy to create RESTful web services.
 @RestController
 public class ContactsController {
 	// @Autowired tells Spring to automatically inject an instance of ContactsService here.
