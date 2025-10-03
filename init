@@ -1,5 +1,5 @@
 if [ -z "$1" ]; then
-        echo "No name provided! Usage: proj-init <project name>"
+        echo "No name provided! Usage: init <project name>"
   exit 1
 fi
 spring init --dependencies=web \
